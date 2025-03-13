@@ -1,0 +1,20 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+
+    a:focus {
+        outline: none;
+    }
+
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width:576px) {
+        width: 35px;
+    }
+}
