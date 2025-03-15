@@ -94,9 +94,7 @@ $(document).ready(function () {
         };
 
         $.ajax({
-            type: "POST", //отдаем данные
-            url: "mailer/smart.php",
-            data: $(this).serialize()
+            url: "mailer/smart.php"
         }).done(function () {
             $(this).find("input").val("");
             $('#consultate, #order').fadeOut();
@@ -106,6 +104,29 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    //оригинал с отправкой
+    /* 
+        $('form').submit(function (e) {
+            e.preventDefault();
+    
+            if (!$(this).valid()) {
+                return;
+            };
+    
+            $.ajax({
+                type: "POST", //отдаем данные
+                url: "mailer/smart.php",
+                data: $(this).serialize()
+            }).done(function () {
+                $(this).find("input").val("");
+                $('#consultate, #order').fadeOut();
+                $('.overlay, #thanks').fadeIn();
+                $('form').trigger('reset');
+    
+            });
+            return false;
+        }); */
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1600) {
