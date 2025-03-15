@@ -6,7 +6,7 @@ import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
-import imagemin from 'gulp-imagemin';
+import tinypng from 'gulp-tinypng';
 
 const sassCompiler = gulpSass(sass);
 
@@ -21,7 +21,7 @@ gulp.task('html', function () {
 gulp.task('server', function () {
     browserSync({
         server: {
-            baseDir: "dist"
+            baseDir: "dist/"
         }
     });
 
@@ -76,15 +76,14 @@ gulp.task('mailer', function () {
 });
 
 // Задача для обработки изображений
-gulp.task('img', async function () {
-    return gulp.src('src/img/**/*')
-        .pipe(imagemin([
-            imagemin.mozjpeg({ quality: 75, progressive: true }),
-            imagemin.optipng({ optimizationLevel: 5 }),
-            imagemin.webp({ quality: 75 })
-        ]))
-        .pipe(gulp.dest('dist/img'));
+
+gulp.task('img', function () {
+    return gulp.src("src/img/**/*")
+        .pipe(tinypng('11fY2PqLWVjDCMyfYtHWyYgxv33H292r'))
+        .pipe(gulp.dest("dist/img"))
+
 });
+
 
 // Задача по умолчанию
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'fonts', 'scripts', 'mailer', 'icons', 'img', 'html', 'logo'));
