@@ -71,6 +71,11 @@
             font-size: 17px;
         }
 
+        &_mini {
+            min-height: 100px;
+        }
+
+
     }
 
     @media screen and (max-width: 425px) {
@@ -86,6 +91,10 @@
 
         &__descr {
             font-size: 12px;
+        }
+
+        &_mini {
+            min-height: 100px;
         }
 
     }
@@ -110,6 +119,10 @@
             top: -9px;
             font-size: 31px;
             inline-size: 15px;
+        }
+
+        &_mini {
+            min-height: 100px;
         }
 
     }
