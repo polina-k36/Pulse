@@ -1,0 +1,86 @@
+.feedback {
+    padding-bottom: 48px;
+
+    &-user {
+        margin-top: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 61px;
+
+        &__icon {
+            width: 169px;
+            height: 169px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        &__name {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            color: #0d0d0d;
+        }
+
+        &__merits {
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+        }
+
+        &__comment {
+            max-width: 676px;
+            font-weight: 300;
+            font-size: 16px;
+            color: #0d0d0d;
+            line-height: 150%;
+
+            p {
+                padding-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            &__icon {
+                width: 129px;
+                height: 129px;
+            }
+
+        }
+
+        @media screen and (max-width: 576px) {
+            & {
+                gap: 20px;
+                flex-direction: column;
+            }
+
+            &__icon {
+                width: 69px;
+                height: 69px;
+            }
+
+            &__name {
+                font-size: 17px;
+            }
+
+            &__merits {
+                font-size: 13px;
+            }
+
+            &__comment {
+                font-size: 12px;
+                font-weight: 300;
+                max-width: 90%;
+            }
+
+
+        }
+
+        @media screen and (max-width:375px) {
+            &__icon {
+                width: 49px;
+                height: 49px;
+            }
+        }
+    }
+}

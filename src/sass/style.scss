@@ -1,0 +1,100 @@
+@import "base/animate";
+@import "base/modern-normalize.min";
+@import "base/slick";
+
+
+@import "base/animation";
+@import "base/variable";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/promo";
+@import "blocks/titles";
+@import "blocks/consultation";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+ol[role="list"],
+ul {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "MuseoSansCyrl", sans-serif;
+    src: url(../font/MuseoSansCyrl-700.eot) format(eot);
+    src: url(../font/MuseoSansCyrl-700.ttf) format(ttf);
+    src: url(../font/MuseoSansCyrl-700.woff) format(woff);
+
+    src: url(../font/MuseoSansCyrl-400.eot) format(eot);
+    src: url(../font/MuseoSansCyrl-400.ttf) format(ttf);
+    src: url(../font/MuseoSansCyrl-400.woff) format(woff);
+
+
+    src: url(../font/MuseoSansCyrl-500.eot) format(eot);
+    src: url(../font/MuseoSansCyrl-500.ttf) format(ttf);
+    src: url(../font/MuseoSansCyrl-500.woff) format(woff);
+
+    src: url(../font/MuseoSansCyrl-300.eot) format(eot);
+    src: url(../font/MuseoSansCyrl-300.ttf) format(ttf);
+    src: url(../font/MuseoSansCyrl-300.woff) format(woff);
+}
+
+html {
+    font-family: "MuseoSansCyrl", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 20%;
+
+    @media screen and (max-width:1280px) {
+        padding: 0 10%;
+
+    }
+
+    @media screen and (max-width:1024px) {
+        padding: 0 6%;
+
+    }
+
+    @media screen and (max-width:576px) {
+        padding: 0 15px;
+    }
+}

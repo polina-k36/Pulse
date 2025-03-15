@@ -1,0 +1,112 @@
+.advantages {
+    background: #f6f6f6;
+    padding: 70px 0 83px 0;
+
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 66px;
+
+        &_items {
+            display: grid;
+            grid-template: 1fr 0.5fr 1.5fr / 1fr;
+            row-gap: 20px;
+            text-align: center;
+            color: #0d0d0d;
+            max-width: calc((100% - 132px) / 3);
+
+            &-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &_anim {
+                    animation: heartbeat 1.5s ease infinite;
+
+                    /* animation-duration: 1.5s;
+                    animation-timing-function: ease;
+                    animation-iteration-count: infinite; */
+                    &:hover {
+                        animation-play-state: paused;
+                    }
+
+                    @media screen and (max-width: 576px) {}
+                }
+            }
+
+            h3 {
+                margin-top: 15px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 129%;
+
+                a {
+                    text-decoration: underline;
+                    text-decoration-skip-ink: none;
+                    color: #f00;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        & {
+            padding-top: 50px;
+            padding-bottom: 65px;
+        }
+
+        &__wrapper {
+            margin-top: 50px;
+            column-gap: 40px;
+        }
+
+        &__wrapper_items {
+            row-gap: 14px;
+
+        }
+
+        &__wrapper_items h3 {
+            font-size: 15px;
+        }
+
+        &__wrapper_items p {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__wrapper_items {
+            max-width: 90%;
+            grid-template-rows: 1fr 0.3fr 1fr;
+        }
+
+        &__wrapper_items h3 {
+            margin-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        &__wrapper {
+            margin-top: 30px;
+        }
+
+        &__wrapper {
+            gap: 10px;
+        }
+
+    }
+}

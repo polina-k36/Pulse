@@ -1,0 +1,89 @@
+.btn {
+    width: 153px;
+    min-height: 32px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border: none;
+    margin-top: 4px;
+    border-radius: 5px;
+    background: $main-color;
+    cursor: pointer;
+    transition: 0.7s all;
+
+    @media screen and (max-width: 768px) {
+        width: 120px;
+        min-height: 25px;
+        font-size: 9.5px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 115px;
+    }
+
+    &_main {
+        margin-top: 67px;
+        width: 303px;
+        min-height: 54px;
+        font-size: 16px;
+
+        @media screen and (max-width: 1024px) {
+            width: 250px;
+            min-height: 40px;
+            font-size: 14px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            width: 230px;
+            min-height: 35px;
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 200px;
+            min-height: 30px;
+            font-size: 13px;
+        }
+    }
+
+    &_consult {
+        margin-top: 5px;
+        width: 303px;
+        min-height: 58px;
+        font-size: 16px;
+
+        @media screen and (max-width: 576px) {
+            width: 270px;
+            min-height: 45px;
+            font-size: 14px;
+        }
+    }
+
+    &_forms {
+        @media screen and (max-width: 425px) {
+            width: 240px;
+            font-size: 13px;
+        }
+    }
+
+    &_buy {
+        width: 135px;
+        min-height: 45px;
+        font-size: 14px;
+
+        @media screen and (max-width:425px) {
+            min-height: 35px;
+            font-size: 13px;
+        }
+
+    }
+}
+
+.btn:hover {
+    color: $main-color;
+    background: #fff;
+    box-shadow: 3px 5px 10px $main-color;
+}

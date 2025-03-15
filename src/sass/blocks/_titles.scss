@@ -1,0 +1,44 @@
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    color: #0d0d0d;
+
+    @media screen and (max-width: 1024px) {
+        & {
+            font-size: 25px;
+        }
+    }
+
+    &_consultation {
+        max-inline-size: 800px;
+        font-size: 36px;
+        line-height: 150%;
+        text-align: left;
+        color: #fff;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 20px;
+        }
+    }
+
+    &_catalog {
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+}

@@ -1,0 +1,117 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.56);
+
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    background: #f2f2f2;
+    min-height: 400px;
+    width: 380px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 38px 40px 40px 40px;
+
+    &__close {
+        position: absolute;
+        right: -31px;
+        top: -11px;
+        color: $main-color;
+        font-size: 41px;
+        inline-size: 20px;
+        cursor: pointer;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        color: #0d0d0d;
+    }
+
+    &__descr {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        color: #0d0d0d;
+        line-height: 20px;
+    }
+
+    &_mini {
+        min-height: 143px;
+    }
+
+    .error {
+        border: solid $main-color 1px;
+    }
+
+    label.error {
+        border: none;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        & {
+            width: 320px;
+            padding: 28px 20px 20px 20px;
+            min-height: 350px;
+        }
+
+        &__subtitle {
+            font-size: 17px;
+        }
+
+    }
+
+    @media screen and (max-width: 425px) {
+        & {
+            width: 290px;
+            padding: 28px 20px 20px 20px;
+            min-height: 350px;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+
+    }
+
+    @media screen and (max-width: 425px) {
+        & {
+            width: 270px;
+            padding: 26px 15px 15px 15px;
+            min-height: 350px;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+
+        &__close {
+            right: -20px;
+            top: -9px;
+            font-size: 31px;
+            inline-size: 15px;
+        }
+
+    }
+
+}

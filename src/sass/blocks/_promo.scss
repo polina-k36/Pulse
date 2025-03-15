@@ -1,0 +1,143 @@
+.promo {
+    background: url(../img/bg/bg.png) center center / cover no-repeat;
+    padding-bottom: 90px;
+
+    &__title {
+        margin-top: 91px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 37px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+            margin-top: 70px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 425px) {
+            text-align: center;
+
+        }
+
+    }
+
+    &__subtitle {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 425px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 14px;
+        }
+    }
+
+    &__description {
+        margin-top: 60px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 40px;
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            & div {
+                font-size: 13px;
+                gap: 15px;
+            }
+
+            & img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+
+        &_cataloge {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: right;
+            color: #fff;
+
+            a {
+                text-decoration: underline;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+            }
+
+
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            align-items: flex-start;
+
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        background-position: 40%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 70px;
+    }
+}
